@@ -105,6 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 # hieronder bepaalt u de taal van uw applicatie nou die staat er al dus
+# en nog een regel omdat het kan
 LANGUAGE_CODE = 'nl-nl'
 
 TIME_ZONE = 'Europe/Amsterdam'
