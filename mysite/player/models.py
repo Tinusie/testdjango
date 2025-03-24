@@ -4,13 +4,12 @@ from django.utils import timezone
 
 # Create your models here.
 class Player(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    title = models.CharField(max_length=200, null=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     name = models.TextField(blank=True, null=True)
     club = models.TextField(blank=True, null=True)
     team = models.TextField(blank=True, null=True)
     age = models.CharField(max_length=110, null=True)
-    created_date = models.DateTimeField(default=timezone.now)
+    created_date = models.DateTimeField(default=timezone.now, null=True)
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
