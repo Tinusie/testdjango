@@ -9,7 +9,7 @@ class Player(models.Model):
     name = models.TextField(blank=True, null=True)
     club = models.TextField(blank=True, null=True)
     team = models.TextField(blank=True, null=True)
-    leeftijd = models.CharField(max_length=110, null=True)
+    age = models.CharField(max_length=110, null=True)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
