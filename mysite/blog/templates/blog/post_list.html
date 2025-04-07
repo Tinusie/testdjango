@@ -12,8 +12,9 @@ crossorigin="anonymous">
 <title></title>
 </head>
 <body>
-    <header>mijn website</header>
+<header>mijn website</header>
 {% block content %}
+<section class="klas1 klas2">
 {% for post in posts %}
 <article class="post"><time class="date">
 {{ post.published_date }}
@@ -22,6 +23,7 @@ crossorigin="anonymous">
 <p>{{ post.text|linebreaksbr }}</p>
 </article>
 {% endfor %}
+</section>
 {% endblock %}
 <footer>&nbsp;</footer>
 </body>
